@@ -1,7 +1,14 @@
 var express = require('express');
 var router = express.Router();
-var ctrlMain = require('../controllers/main')
+var ctrlMovies = require('../controllers/movies')
+var ctrlOthers = require('../controllers/others')
 
-router.get('/', ctrlMain.index)
+// movies pages
+router.get('/', ctrlMovies.homelist)
+router.get('/movie', ctrlMovies.movieInfo)
+router.get('/movie/review/new', ctrlMovies.addReview)
+
+// other pages
+router.get('/about', ctrlOthers.about)
 
 module.exports = router;
