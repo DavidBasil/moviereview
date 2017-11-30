@@ -1,0 +1,23 @@
+<%- include partials/head %>
+<%- include partials/nav %>
+
+<div class="uk-container">
+
+	<h2>Review Star Wars</h2>
+
+	<form action="/location" method="get" role="form">
+		<input type="text" class="uk-input uk-margin-small" placeholder="Name">	
+		<select name="rating" id="rating" class="uk-select uk-margin-small">
+			<option value="" disabled selected>Rating</option>
+			<option>5</option>	
+			<option>4</option>	
+			<option>3</option>	
+			<option>2</option>	
+			<option>1</option>	
+		</select>
+	</form>
+
+</div><!-- /uk-container -->
+
+
+<%- include partials/footer %>

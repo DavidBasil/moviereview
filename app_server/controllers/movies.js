@@ -10,6 +10,6 @@ module.exports.movieInfo = function(req, res){
 
 // get add review page
 module.exports.addReview = function(req, res){
-	res.render('index', { title: 'Add review' })
+	res.render('movie-review-form', { title: 'Add review' })
 }
 
